@@ -1,0 +1,26 @@
+
+  .caseBox {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    align-items: center;
+
+    i {
+      &:first-child {
+        font-size: 1.6rem;
+        color: #ff8d1a;
+      }
+      &:nth-child(2) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .study-title {
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+    
+        i {
+          font-size: 1.5rem;
+        }
+  }

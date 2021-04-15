@@ -1,0 +1,260 @@
+.case-box {
+    display: flex;
+    .case-title {
+        width:80px;
+        text-align: right;
+        vertical-align: middle;
+        float: left;
+        font-size: 14px;
+        color: #606266;
+        line-height: 40px;
+        padding: 0 12px 0 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-weight:600;
+    }
+}
+
+// 权重
+.weight-box {
+    width:300px;
+    border: 1px solid #e6ebf5;
+    border-left:none;
+    .weight-title {
+        height: 40px;
+        line-height: 40px;
+        background: #F5F7FA;
+        margin: 0;
+        padding-left: 15px;
+        border-bottom: 1px solid #e6ebf5;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align:center;
+        font-size: 16px;
+        color: #303133;
+        font-weight: normal;
+
+    }
+    .weight-list {
+        height:246px;
+        padding:6px 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        li {
+            width:100%;
+            height:30px;
+            line-height:30px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+            white-space: nowrap;
+            .el-row {
+              width:100%;
+              float:right;
+            }
+
+            .el-slider {
+                width:98%;
+                height:30PX;
+               float: right;
+            }
+
+            .el-col {
+              &:last-child{
+                text-align: left;
+                line-height:35px;
+              }
+            }
+
+            input {
+                width:100%;
+                height:30px;
+                line-height:30px;
+                outline: none;
+                border:none;
+                border-bottom: 1px solid #e6ebf5;
+
+                padding:0 5px;
+            }
+
+            .el-select {
+                margin:0 auto;
+                width:100%;
+                text-align:center;
+                border-radius:0;
+            }
+            
+        }
+    }
+}
+
+// 案例封面
+.img-block {
+    text-align:center;
+  
+    .demonstration {
+      font-size:16px;
+      line-height:40px;
+      text-align:left;
+      text-indent: 25px;
+    }
+    .el-image {
+      width:180px;
+      height:400px;
+      padding:10px;
+      background:white;
+      box-shadow: 0 0 10px #888888;
+      margin-bottom:10px;
+    }
+   
+  }
+
+  // 案例详情
+  .textBox {
+    border:1px solid #DCDFE6;
+    border-radius: 4px;
+    background:#fff;;
+    width:100%;
+    padding:5px 15px;
+    overflow-y: auto;
+    height:200px;
+    margin-bottom:20px;
+  }
+.dot {
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    background:#2a82e4;
+    color:white;
+    text-align:center;
+    line-height:20px;
+    font-weight:bold;
+  }
+  .arrows {
+    display: flex;
+    &:first-child {
+      width:22px;
+      height:12px;
+      background:#2a82e4;
+      color:white;
+      margin-left:-7px;
+    }
+    .last {
+      width: 0;
+      height: 0;
+      border: 6px solid;
+      border-color: transparent transparent transparent #2a82e4;
+      margin-left:22px;
+    }
+  }
+  
+  
+  .detail-box {
+    line-height:30px;
+    h4 {
+      font-size:16px;
+      margin-top:0;
+    }
+    h5 {
+      line-height:20px;
+    }
+  }
+  .detail-title {
+    text-align: center;
+
+  }
+  .detailBox {
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    i {
+      font-size:1.8rem;
+    }
+
+    .iconBox {
+      width:50px;
+      float: right;
+    }
+    .infoBox {
+      width:calc(100% - 50);
+      display: block;
+      margin:0;
+      line-height:20px;
+      float: left;
+      -moz-user-select:none;/*火狐*/
+      -webkit-user-select:none;/*webkit浏览器*/
+      user-select:none;
+    }
+  }
+  
+  .viewBox {
+    line-height:35px;
+  }
+  
+  // 参考资料
+  .fileBox {
+    margin-bottom:10px;
+    height:400px;
+    overflow-y: auto;
+
+    .time {margin-right:20px;}
+    li {
+      display: flex;
+      align-items: center;
+      font-size:16px;
+      height:30px;
+      line-height:30px;
+      margin-bottom:5px;
+      svg {
+        width:30px;
+        height:30px;
+        margin-right:10px;
+      }
+      div {
+        position:absolute;
+        right:20px;
+  
+        i {
+          font-size:1.35rem;
+          cursor: pointer;
+        }
+        
+      }
+    }
+  }
+
+    // /* 设置滚动条的样式 */
+    .fileBox::-webkit-scrollbar {
+      width:10px;
+      height: 5px;
+      }
+  
+  
+      .fileBox::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+  
+      .fileBox::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #535353;
+      }
+  
+      .fileBox::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 0;
+        background: #ededed;
+      }
+  
+  .icon {  
+    width: 1em; height: 1em;  
+    vertical-align: -0.15em;  
+    fill: currentColor;  
+    overflow: hidden;  
+  } 
+ 
+
+
